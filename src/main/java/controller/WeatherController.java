@@ -33,7 +33,7 @@ public class WeatherController extends HttpServlet {
 
 		String cityName = request.getParameter("city-name");
 		cityName = URLEncoder.encode(cityName,"UTF-8");
-		String apiKey = "df179230dcf198e48eda336db05456c3";
+		String apiKey = "YOUR_API_KEY";
 		String apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + apiKey
 				+ "&units=metric";
 
